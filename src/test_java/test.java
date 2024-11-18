@@ -19,13 +19,26 @@ class Info{
 
 public class test {
     public static void main(String[] args) {
+    	Scanner input=new Scanner(System.in);
     	Info in = new Info();
     	Employer emp =new Employer();
+    	System.out.println("* send data as params and data is get it from input to employer file *");
+    	System.out.print("your name ?");
+    	String name = input.nextLine();
+    	System.out.print("your post ?");
+    	String post = input.nextLine();
+    	System.out.print("your salary ?");
+    	String salary = input.nextLine();
+    	emp.data2(name, post, salary);
+    	System.out.println("* send data as params and data is in array to employer file *");
     	emp.data("shady","developer","1000$");
+    	System.out.println("* show data in the same file but defferant function *");
     	in.users();
+    	System.out.println("* send data to outher class but the same file *");
     	System.out.println(in.years(2024,2000)); 
+    	System.out.println("* create function to show the data into file.txt *");
         try {
-            File one = new File("C:\\Users\\chadi\\OneDrive\\Desktop\\test.txt");
+            File one = new File("* C:\\Users\\chadi\\OneDrive\\Desktop\\test.txt *");
             Scanner read = new Scanner(one);
 
             if (read.hasNextLine()) {
@@ -37,7 +50,7 @@ public class test {
 
             read.close(); // Close the Scanner
         } catch (FileNotFoundException e) {
-            System.out.println("File not found: " + e.getMessage());
+            System.err.println("File not found: " + e.getMessage());
         }
     }
 }

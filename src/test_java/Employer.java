@@ -6,4 +6,9 @@ public class Employer {
 		System.out.println("Position : " + p);
 		System.out.println("Salary : " + s);
 	}
+	public void data2(String n,String p,String s) {
+		System.out.println("Name : " + n);
+		System.out.println("Position : " + p);
+		System.out.println("Salary : " + s);
+	}
 }

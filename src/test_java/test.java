@@ -20,6 +20,8 @@ class Info{
 public class test {
     public static void main(String[] args) {
     	Info in = new Info();
+    	Employer emp =new Employer();
+    	emp.data("shady","developer","1000$");
     	in.users();
     	System.out.println(in.years(2024,2000)); 
         try {

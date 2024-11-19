@@ -3,6 +3,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+import Test_java_2.InfoData;
 class Info{
 	int years(int a,int b) {
 		return a-b;
@@ -52,5 +53,7 @@ public class test {
         } catch (FileNotFoundException e) {
             System.err.println("File not found: " + e.getMessage());
         }
+        InfoData data = new InfoData();
+        System.out.println(data.one);
     }
 }

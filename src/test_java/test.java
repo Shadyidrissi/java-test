@@ -56,8 +56,17 @@ public class test {
         }
         InfoData data = new InfoData();
         System.out.println(data.one);
+        //create array and make it fill auto by number 10 and print all array
+        System.out.println("* create array and fill it auto");
         int[] nums = new int[4];
 		Arrays.fill(nums, 10);
 		System.out.println(Arrays.toString(nums));
+		//compare tow arrays
+		int[] array1= new int[3];
+		array1[0]=1;
+		array1[1]=2;
+		array1[2]=3;
+		int[] array2= {1,2,3};
+		System.out.println(Arrays.equals(array1, array2));
     }
 }

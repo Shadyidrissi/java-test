@@ -1,6 +1,7 @@
 package test_java;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 import Test_java_2.InfoData;
@@ -50,10 +51,13 @@ public class test {
             }
 
             read.close(); // Close the Scanner
-        } catch (FileNotFoundException e) {
+        } catch (Exception e) {
             System.err.println("File not found: " + e.getMessage());
         }
         InfoData data = new InfoData();
         System.out.println(data.one);
+        int[] nums = new int[4];
+		Arrays.fill(nums, 10);
+		System.out.println(Arrays.toString(nums));
     }
 }

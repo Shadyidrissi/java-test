@@ -69,7 +69,7 @@ public class test {
 		int[] array2= {1,2,3};
 		System.out.println(Arrays.equals(array1, array2));
 		//ranking the array values
-		int[] array10 = {2,4,6,8,1,6,4,0,97,100,4};
+		String[] array10 = {"D","C","B","U","T","Y","G","F","A"};
 		Arrays.sort(array10);
 		System.out.println(Arrays.toString(array10));
     }
